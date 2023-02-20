@@ -14,9 +14,9 @@ jobs:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           # using the `org/team_slug` or `/team_slug` syntax to add git team as reviewers
           reviewers: |
-            zyd2001
-            johnw08
-            AlstonXiao
+            SourceGold/zyd2001
+            SourceGold/johnw08
+            SourceGold/AlstonXiao
           numberOfReviewers: 2
           addAssignees: false
           skipKeywords: wip, draft
