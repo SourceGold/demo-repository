@@ -4,7 +4,6 @@ on:
     types: [opened]
   pull_request:
     types: [opened]
-    branches: main
 jobs:
   run:
     runs-on: ubuntu-latest
@@ -14,9 +13,8 @@ jobs:
           GITHUB_TOKEN: ${{ secrets.PAT_WITH_ORG_ACCESS }}
           # using the `org/team_slug` or `/team_slug` syntax to add git team as reviewers
           reviewers: |
-            SourceGold/zyd2001
-            SourceGold/johnw08
-            SourceGold/AlstonXiao
+            zyd2001
+            johnw08
           numberOfReviewers: 2
           addAssignees: false
           skipKeywords: wip, draft
