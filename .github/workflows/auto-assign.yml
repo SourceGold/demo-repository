@@ -11,7 +11,7 @@ jobs:
     steps:
       - uses: wow-actions/auto-assign@v3
         with:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          GITHUB_TOKEN: ${{ secrets.PAT_WITH_ORG_ACCESS }}
           # using the `org/team_slug` or `/team_slug` syntax to add git team as reviewers
           reviewers: |
             SourceGold/zyd2001
