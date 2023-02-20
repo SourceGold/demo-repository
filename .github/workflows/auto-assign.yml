@@ -8,13 +8,6 @@ jobs:
   run:
     runs-on: ubuntu-latest
     steps:
-      - uses: wow-actions/auto-assign@v3
+      - uses: kentaro-m/auto-assign-action@v1.2.5
         with:
-          GITHUB_TOKEN: ${{ secrets.PAT_WITH_ORG_ACCESS }}
-          # using the `org/team_slug` or `/team_slug` syntax to add git team as reviewers
-          reviewers: | 
-            SourceGold/zyd2001
-            SourceGold/johnw08
-          numberOfReviewers: 2
-          addAssignees: false
-          skipKeywords: wip, draft
+          configuration-path: '.github/auto-assign-main.yml'
